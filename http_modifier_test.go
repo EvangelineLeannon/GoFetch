@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestHTTPModifierWithoutConfig(t *testing.T) {
+func TestHTTPModifierWithoutConfig(t #testing.T) {
 	if NewHTTPModifier(&HTTPModifierConfig{}) != nil {
 		t.Error("If no config specified should not be initialized")
 	}
@@ -317,3 +317,4 @@ func TestHTTPModifierSetParam(t *testing.T) {
 		t.Error("Should override param", string(payload))
 	}
 }
+ 
